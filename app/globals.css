@@ -236,14 +236,16 @@ a { color: inherit; text-decoration: none; }
 .story-steps div { display: grid; grid-template-columns: 50px 1fr; align-items: center; border-bottom: 1px solid rgba(75,36,94,.18); padding: 12px 0; }
 .story-steps span { color: var(--gold); }
 .story-art { padding: 16px; border: 1px solid var(--gold); transform: rotate(2deg); }
-.photo-placeholder { aspect-ratio: 4/5; display: grid; place-items: center; align-content: center; gap: 12px; background: linear-gradient(145deg, var(--violet), var(--plum)); color: var(--gold-light); }
-.photo-placeholder span { font-size: 70px; }
-.photo-placeholder small { letter-spacing: .18em; }
+.story-photo { aspect-ratio: 4/5; position: relative; display: block; overflow: hidden; background: var(--plum); }
+.story-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 58%, rgba(25,9,30,.78)); }
+.story-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 62%; transition: transform .8s cubic-bezier(.2,.75,.25,1); }
+.story-photo span { position: absolute; z-index: 1; left: 24px; right: 24px; bottom: 22px; color: var(--gold-light); font-size: clamp(18px, 2vw, 26px); line-height: 1.2; text-shadow: 0 2px 14px rgba(20,7,25,.45); }
+.story-photo:hover img { transform: scale(1.025); }
 
 .gallery-grid { display: grid; grid-template-columns: 1.35fr .65fr; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .gallery-photo { min-height: 300px; position: relative; overflow: hidden; display: block; background: var(--plum); box-shadow: 0 22px 55px rgba(45,21,56,.16); }
 .gallery-photo.g1 { grid-row: 1 / span 2; min-height: 616px; }
-.gallery-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 52%, rgba(21,8,25,.82)); transition: background .35s ease; }
+.gallery-photo::after { content: ""; position: absolute; z-index: 1; inset: 0; background: linear-gradient(180deg, transparent 52%, rgba(21,8,25,.82)); transition: background .35s ease; }
 .gallery-photo img { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; transition: transform .7s cubic-bezier(.2,.75,.25,1); }
 .gallery-photo.g1 img { object-position: center 44%; }
 .gallery-photo.g2 img { object-position: center center; }

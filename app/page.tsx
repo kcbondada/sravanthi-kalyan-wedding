@@ -275,7 +275,9 @@ const groomEvents = [
     youtubeUrl: YOUTUBE_PLACEHOLDER
   },
   {
-    en: "Wedding", te: "శుభ వివాహం", icon: "wedding", tone: "violet", pending: true,
+    en: "Wedding", te: "శుభ వివాహం", icon: "wedding", tone: "violet", pending: false,
+    dateEn: "November 22, 2026", dateTe: "నవంబర్ 22, 2026",
+    timeEn: "Muhurtham time coming soon", timeTe: "ముహూర్త సమయం త్వరలో",
     venueEn: "Suvarna Kalyana Mandapam", venueTe: "సువర్ణ కళ్యాణ మండపం", mapUrl: WEDDING_MAP,
     youtubeUrl: YOUTUBE_PLACEHOLDER
   },
@@ -318,7 +320,9 @@ const brideEvents = [
     youtubeUrl: YOUTUBE_PLACEHOLDER
   },
   {
-    en: "Wedding", te: "శుభ వివాహం", icon: "wedding", tone: "sandal", pending: true,
+    en: "Wedding", te: "శుభ వివాహం", icon: "wedding", tone: "sandal", pending: false,
+    dateEn: "November 22, 2026", dateTe: "నవంబర్ 22, 2026",
+    timeEn: "Muhurtham time coming soon", timeTe: "ముహూర్త సమయం త్వరలో",
     venueEn: "Suvarna Kalyana Mandapam", venueTe: "సువర్ణ కళ్యాణ మండపం", mapUrl: BRIDE_WEDDING_MAP,
     youtubeUrl: YOUTUBE_PLACEHOLDER
   },
@@ -938,7 +942,12 @@ export default function Home() {
             {["Hello", "Friendship", "Plot twist", "Forever"].map((step, i) => <div key={step}><span>0{i + 1}</span><strong>{step}</strong></div>)}
           </div>
         </div>
-        <div className="story-art" data-reveal aria-label="Photo placeholder"><div className="photo-placeholder"><span>{firstInitial} & {secondInitial}</span><small>PHOTO COMING SOON</small></div></div>
+        <div className="story-art" data-reveal>
+          <a className="story-photo" href="/couple-engagement-editorial.webp" target="_blank" rel="noreferrer">
+            <img src="/couple-engagement-editorial.webp" alt="Kalyan and Sravanthi in traditional attire at their engagement celebration" loading="lazy" />
+            <span>{language === "te" ? "ఇక్కడి నుంచి మన ఎప్పటికీ మొదలైంది" : "From this moment, our forever began"}</span>
+          </a>
+        </div>
       </section>
 
       <section className="gallery section-pad">
