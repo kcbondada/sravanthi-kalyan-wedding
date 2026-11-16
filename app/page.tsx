@@ -277,7 +277,7 @@ const groomEvents = [
   {
     en: "Wedding", te: "శుభ వివాహం", icon: "wedding", tone: "violet", pending: false,
     dateEn: "November 22, 2026", dateTe: "నవంబర్ 22, 2026",
-    timeEn: "Muhurtham time coming soon", timeTe: "ముహూర్త సమయం త్వరలో",
+    timeEn: "Muhurtham at 8:42 PM", timeTe: "ముహూర్తం రాత్రి 8:42 గంటలకు",
     venueEn: "Suvarna Kalyana Mandapam", venueTe: "సువర్ణ కళ్యాణ మండపం", mapUrl: WEDDING_MAP,
     youtubeUrl: YOUTUBE_PLACEHOLDER
   },
@@ -322,7 +322,7 @@ const brideEvents = [
   {
     en: "Wedding", te: "శుభ వివాహం", icon: "wedding", tone: "sandal", pending: false,
     dateEn: "November 22, 2026", dateTe: "నవంబర్ 22, 2026",
-    timeEn: "Muhurtham time coming soon", timeTe: "ముహూర్త సమయం త్వరలో",
+    timeEn: "Muhurtham at 8:42 PM", timeTe: "ముహూర్తం రాత్రి 8:42 గంటలకు",
     venueEn: "Suvarna Kalyana Mandapam", venueTe: "సువర్ణ కళ్యాణ మండపం", mapUrl: BRIDE_WEDDING_MAP,
     youtubeUrl: YOUTUBE_PLACEHOLDER
   },
