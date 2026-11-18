@@ -14,7 +14,7 @@ const copy = {
     groomParents: "Son of Bondada Ramalingeswara Rao & Bondada Nageswaramma",
     brideParents: "Daughter of Sanaka Venu Gopala Rao & Sarala",
     celebration: "The Celebrations",
-    eventIntro: "Five cherished moments. One beautiful beginning.",
+    eventIntro: "Cherished moments. One beautiful beginning.",
     dressCode: "Dress Code",
     dressIntro: "Dress up and match our celebration vibe!",
     live: "Live Broadcast",
@@ -52,7 +52,7 @@ const copy = {
     groomParents: "బొండాడ రామలింగేశ్వరరావు & బొండాడ నాగేశ్వరమ్మ గార్ల కుమారుడు",
     brideParents: "సనక వేణు గోపాల రావు & సరళ గార్ల కుమార్తె",
     celebration: "శుభ వేడుకలు",
-    eventIntro: "ఐదు మధురమైన ఘట్టాలు. ఒక అందమైన ఆరంభం.",
+    eventIntro: "మధురమైన ఘట్టాలు. ఒక అందమైన ఆరంభం.",
     dressCode: "వస్త్రధారణ",
     dressIntro: "మా వేడుకల సందడికి తగ్గట్టుగా అందంగా ముస్తాబై రండి!",
     live: "ప్రత్యక్ష ప్రసారం",
@@ -89,7 +89,6 @@ const RECEPTION_MAP = "https://share.google/JoGPK2P0mQEoO7gtQ";
 const WEDDING_MAP = "https://maps.app.goo.gl/rgPpR6SjsgetBn1XA";
 const BRIDE_HOME_MAP = "https://maps.google.com/?q=16.196985,81.152130";
 const BRIDE_WEDDING_MAP = "https://share.google/rS7CeuWGiumTjZsAd";
-const SANGEETH_MAP = "https://share.google/yi45YcCLDd6HYZUnd";
 // Replace this placeholder with each ceremony's YouTube livestream URL before the event.
 const YOUTUBE_PLACEHOLDER = "https://www.youtube.com/";
 const RSVP_EMAIL_ENDPOINT = "https://formsubmit.co/ajax/sravanthikalyan1122@gmail.com";
@@ -138,14 +137,6 @@ const groomDressCodeItems = [
 ];
 
 const brideDressCodeItems = [
-  {
-    icon: "♫",
-    en: "Sangeeth",
-    te: "సంగీత్",
-    noteEn: "Glam & sparkle",
-    noteTe: "గ్లామ్ & మెరుపులు",
-    colors: ["#7928c8", "#ffd46a", "#d75286"]
-  },
   {
     icon: "🌼",
     en: "Haldi",
@@ -241,12 +232,6 @@ function EventLogo({ name }: { name: string }) {
         <circle cx="45.5" cy="21" r="3" />
         <path d="M27 36c1.4-2.3 3-3.5 5-3.5s3.6 1.2 5 3.5c-1.4 2.3-3 3.5-5 3.5S28.4 38.3 27 36Z" />
       </>
-    ),
-    sangeeth: (
-      <>
-        <path d="M39 14v27.5c0 5.2-4.2 9.5-9.5 9.5S20 47.7 20 43s4.2-8 9.5-8c2.2 0 4.2.6 5.5 1.6V19l15-4v20.5c0 5.2-4.2 9.5-9.5 9.5S31 41.7 31 37s4.2-8 9.5-8c2.1 0 4 .6 5.5 1.6V12l-7 2Z" />
-        <path d="M16 19c3.2-3.7 6.5-3.7 9.8 0M12 25c5.8-6.8 11.7-6.8 17.5 0" />
-      </>
     )
   };
 
@@ -298,13 +283,6 @@ const groomEvents = [
 ];
 
 const brideEvents = [
-  {
-    en: "Sangeeth", te: "సంగీత్", icon: "sangeeth", tone: "violet",
-    dateEn: "November 20, 2026", dateTe: "నవంబర్ 20, 2026",
-    timeEn: "7:00 PM", timeTe: "సాయంత్రం 7:00",
-    venueEn: "Palakurty Vari Kalyana Mandapam", venueTe: "పాలకుర్తి వారి కళ్యాణ మండపం", mapUrl: SANGEETH_MAP,
-    youtubeUrl: YOUTUBE_PLACEHOLDER
-  },
   {
     en: "Haldi", te: "హల్దీ", icon: "haldi", tone: "haldi",
     dateEn: "November 21, 2026", dateTe: "నవంబర్ 21, 2026",
@@ -368,13 +346,6 @@ const groomCountdownEvents = [
 ];
 
 const brideCountdownEvents = [
-  {
-    en: "Sangeeth", te: "సంగీత్",
-    dateEn: "November 20, 2026", dateTe: "నవంబర్ 20, 2026",
-    timeEn: "7:00 PM", timeTe: "సాయంత్రం 7:00",
-    start: "2026-11-20T19:00:00+05:30", end: "2026-11-20T23:00:00+05:30",
-    venueEn: "Palakurty Vari Kalyana Mandapam", venueTe: "పాలకుర్తి వారి కళ్యాణ మండపం", mapUrl: SANGEETH_MAP
-  },
   {
     en: "Haldi", te: "హల్దీ",
     dateEn: "November 21, 2026", dateTe: "నవంబర్ 21, 2026",
